@@ -4,12 +4,36 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'folder/Inbox',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   {
-    path: 'folder/:id',
-    loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
+    path: 'home',
+    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+  },
+  {
+    path: 'customers',
+    loadChildren: () => import('./customers/customers.module').then( m => m.CustomersPageModule)
+  },
+  {
+    path: 'inventario',
+    loadChildren: () => import('./inventario/inventario.module').then( m => m.InventarioPageModule)
+  },
+  {
+    path: 'actfij',
+    loadChildren: () => import('./actfij/actfij.module').then( m => m.ActfijPageModule)
+  },
+  {
+    path: 'reporte',
+    loadChildren: () => import('./reporte/reporte.module').then( m => m.ReportePageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'detalle-act-fij',
+    loadChildren: () => import('./detalle-act-fij/detalle-act-fij.module').then( m => m.DetalleActFijPageModule)
   }
 ];
 

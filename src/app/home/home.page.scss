@@ -1,0 +1,41 @@
+ion-toolbar{
+    background-color: var(--ion-color-ucsm);
+}
+
+#container{
+    text-align: center;
+    position: absolute;
+    left: 20px;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+ion-card-header.ios {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+ion-card-title{
+    text-align: center;
+    font-size: 1rem;
+}
+
+img{
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    opacity: 0.5;
+}
+ion-card{
+    display: inline-block;
+    width: 150px;
+    height: 160px;
+    text-align: center;
+    padding-top: 25px;
+    border: #dadada solid;
+}
+
+#div_card{
+    text-align: center;
+}

@@ -74,6 +74,14 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
+  /** ucsm **/
+  --ion-color-ucsm: #05be6a;
+	--ion-color-ucsm-rgb: 5,190,106;
+	--ion-color-ucsm-contrast: #ffffff;
+	--ion-color-ucsm-contrast-rgb: 255,255,255;
+	--ion-color-ucsm-shade: #04a75d;
+	--ion-color-ucsm-tint: #1ec579;
 }
 
 @media (prefers-color-scheme: dark) {
